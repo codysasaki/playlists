@@ -23,7 +23,7 @@ import { auth } from "../firebase";
 import { getDatabase, ref, set } from "firebase/database";
 
 //due to using Firebase RTDB
-//LogBox.ignoreLogs(['Setting a timer for a long period of time']);
+LogBox.ignoreLogs(["Setting a timer for a long period of time"]);
 
 const SignUpScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -125,6 +125,9 @@ const SignUpScreen = ({ navigation }) => {
                   }
                   placeholder="Password..."
                 />
+                <FormControl.HelperText>
+                  Must be at least 6 characters.
+                </FormControl.HelperText>
               </FormControl>
               <Button mt="2" onPress={handleSignUp}>
                 Sign Up

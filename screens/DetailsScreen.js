@@ -1,15 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  Box,
-  Image,
-  HStack,
-  VStack,
-  Text,
-  Spacer,
-  FlatList,
-  Button,
-  Center,
-} from "native-base";
+import { Box, HStack, Text, Spacer, FlatList, Button } from "native-base";
 
 import DetailsHeader from "../components/DetailsHeader";
 

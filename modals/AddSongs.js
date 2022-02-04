@@ -9,7 +9,6 @@ import {
   Spacer,
   Pressable,
   FlatList,
-  Heading,
   Box,
 } from "native-base";
 import { useState } from "react";
