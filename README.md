@@ -16,6 +16,7 @@
 
 1. [Getting Started](#getting-started)
     1. [Dependencies](#dependencies)
+1. [Improvements To Be Made](#improvements)
 1. [Authors](#authors)
 
 
@@ -66,6 +67,22 @@ Following these steps should get you up and running this app on your local machi
 ```
 
 **[Back to top](#table-of-contents)**
+
+## Improvements
+  While the core components of the CRUD app have been completed, there are many added features that could be implemented for better user clarity and easier scalability if
+  an increase in the database was made.
+  * Unit testing on Firebase Real Time Database
+    * Ensure security rules are working as intended
+    * Ensure data is actually being sent/updated/etc
+  * Linter
+    *Removing unused code
+  * Better Error Handling and Feedback to User
+    * Toasts for login/signup should provide more (but not too much) information on failed sign up/ log in
+    * Improve NativeBase Input for fields to reduce invalid signups
+  * Verify Emails
+    * Automatically removing unverified accounts after a certain time will reduce database size;
+  * Search capabilities for playlists and songs
+   
 
 ## Authors
 
