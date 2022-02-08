@@ -27,7 +27,9 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 var selectedSongs = [];
 
 const FormScreen = ({ navigation, route }) => {
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState(
+    "https://wallpaperaccess.com/full/317501.jpg"
+  );
   const [playlistName, setPlaylistName] = useState("");
   const [description, setDescription] = useState("");
   const [songList, setSongList] = useState("");
