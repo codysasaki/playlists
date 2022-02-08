@@ -219,26 +219,16 @@ const FormScreen = ({ navigation, route }) => {
                 Pick an image from camera roll
               </Button>
               <Center pt={3}>
-                {image ? (
-                  <Image
-                    source={{
-                      uri: image,
-                    }}
-                    fallbackSource={{
-                      uri: "https://wallpaperaccess.com/full/317501.jpg",
-                    }}
-                    alt="Alternate Text"
-                    size="2xl"
-                  />
-                ) : (
-                  <Image
-                    source={{
-                      uri: "https://wallpaperaccess.com/full/317501.jpg",
-                    }}
-                    alt="Alternate Text"
-                    size="2xl"
-                  />
-                )}
+                <Image
+                  source={{
+                    uri: image,
+                  }}
+                  fallbackSource={{
+                    uri: "https://wallpaperaccess.com/full/317501.jpg",
+                  }}
+                  alt="Alternate Text"
+                  size="2xl"
+                />
               </Center>
               <VStack space={3} mt="5">
                 <FormControl>
